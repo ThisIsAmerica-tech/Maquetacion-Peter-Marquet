@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petermarket - Tu Abarrote de Confianza</title>
+    <!-- Enlace a FontAwesome para el ícono del menú -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado Principal / Navegación -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="container-icon" id="menu-toggle">
+                <!-- Usamos 'fa-solid' porque fa-light requiere licencia PRO -->
+                <i class="bar-icon fa-solid fa-bars"></i>
+            </div>
+            
+            <div class="logo">
+                <h1>Petermarket</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="¿Qué estás buscando hoy? (Ej. Arroz, Leche, Azúcar)">
+                <button type="button">Buscar</button>
+            </div>
+            <nav class="user-nav">
+                <a href="#login" class="nav-item">👤 Ingresar</a>
+                <a href="#cart" class="nav-item cart">
+                    🛒 Mi Carrito <span class="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+        <!-- Menú de Categorías -->
+        <nav class="category-nav">
+            <ul id="mobile-nav">
+                <li><a href="#abarrotes">Abarrotes</a></li>
+                <li><a href="#lacteos">Lácteos y Huevos</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
+                <li><a href="#limpieza">Limpieza</a></li>
+                <li><a href="#aseo">Aseo Personal</a></li>
+                <li><a href="#ofertas" class="highlight">🔥 Ofertas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Hero (Banner principal) -->
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h2>Los mejores precios<br>todos los días</h2>
+                <p>Descubre nuestras ofertas en productos de primera necesidad.</p>
+                <a href="#productos" class="cta-button">Ver Promociones</a>
+            </div>
+        </section>
+
+        <!-- Sección de Categorías Destacadas -->
+        <section class="categories-section">
+            <h2 class="section-title">Compra por Categorías</h2>
+            <div class="category-grid">
+                <article class="category-card">
+                    <div class="category-icon">🍚</div>
+                    <h3>Abarrotes Básicos</h3>
+                </article>
+                <article class="category-card">
+                    <div class="category-icon">🥛</div>
+                    <h3>Lácteos</h3>
+                </article>
+                <article class="category-card">
+                    <div class="category-icon">🧃</div>
+                    <h3>Bebidas</h3>
+                </article>
+                <article class="category-card">
+                    <div class="category-icon">🧼</div>
+                    <h3>Limpieza</h3>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Productos -->
+        <section id="productos" class="products-section">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <!-- Placeholder visual -->
+                        <div class="img-placeholder" style="background-color: #ffd166;">🍚</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Caserita</span>
+                        <h3 class="product-name">Arroz Extra 50kg - Saco</h3>
+                        <div class="product-price">
+                            <span class="current-price">S/ 180.00</span>
+                            <span class="old-price">S/ 195.00</span>
+                        </div>
+                        <button class="add-to-cart-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+                
+                <!-- Producto 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background-color: #118ab2;">🥛</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Gloria</span>
+                        <h3 class="product-name">Leche Evaporada Tarro 400g (Pack x6)</h3>
+                        <div class="product-price">
+                            <span class="current-price">S/ 21.50</span>
+                        </div>
+                        <button class="add-to-cart-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background-color: #06d6a0;">🧴</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Primor</span>
+                        <h3 class="product-name">Aceite Vegetal Botella 1L</h3>
+                        <div class="product-price">
+                            <span class="current-price">S/ 8.90</span>
+                            <span class="old-price">S/ 10.50</span>
+                        </div>
+                        <button class="add-to-cart-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 4 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <div class="img-placeholder" style="background-color: #ef476f;">🥫</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Fanny</span>
+                        <h3 class="product-name">Atún en Trozos Lata 170g</h3>
+                        <div class="product-price">
+                            <span class="current-price">S/ 5.20</span>
+                        </div>
+                        <button class="add-to-cart-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Beneficios -->
+        <section class="benefits-section">
+            <div class="benefit">
+                <span class="icon">🚚</span>
+                <div>
+                    <h4>Envío Rápido</h4>
+                    <p>Llega a tu casa hoy mismo</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <span class="icon">💳</span>
+                <div>
+                    <h4>Pago Seguro</h4>
+                    <p>Aceptamos todas las tarjetas, Yape y Plin</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <span class="icon">💯</span>
+                <div>
+                    <h4>Garantía de Calidad</h4>
+                    <p>Productos frescos y revisados</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Petermarket</h3>
+                <p>Tu supermercado online de confianza. Los mejores precios en abarrotes para tu hogar o negocio.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Servicio al Cliente</h3>
+                <ul>
+                    <li><a href="#">Centro de Ayuda</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                    <li><a href="#">Libro de Reclamaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>📍 Av. Principal 123, Lima, Perú</li>
+                    <li>📞 (01) 123-4567</li>
+                    <li>✉️ soporte@petermarket.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Petermarket. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica del carrito
+        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const countSpan = document.querySelector('.cart-count');
+                countSpan.innerText = parseInt(countSpan.innerText) + 1;
+                countSpan.style.transform = 'scale(1.2)';
+                setTimeout(() => countSpan.style.transform = 'scale(1)', 200);
+            });
+        });
+
+    </script>
+</body>
+</html>
