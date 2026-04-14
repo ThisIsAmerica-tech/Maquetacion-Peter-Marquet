@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lácteos y Huevos - Petermarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="container-icon" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a href="../index.html"><h1><span>Peter</span>market</h1></a>
+            </div>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="¿Qué estás buscando?">
+                <button type="button">Buscar</button>
+            </div>
+            <nav class="user-nav">
+                <a href="#login" class="nav-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Ingresar</span>
+                </a>
+                <a href="#cart" class="nav-item cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Mi Carrito</span>
+                    <span class="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+        <nav class="category-nav">
+            <ul id="mobile-nav">
+                <li><a href="abarrotes.html"><i class="fa-solid fa-wheat-awn"></i> Abarrotes</a></li>
+                <li><a href="lacteos.html" class="active-cat"><i class="fa-solid fa-cow"></i> Lácteos y Huevos</a></li>
+                <li><a href="bebidas.html"><i class="fa-solid fa-bottle-water"></i> Bebidas</a></li>
+                <li><a href="limpieza.html"><i class="fa-solid fa-broom"></i> Limpieza</a></li>
+                <li><a href="aseo.html"><i class="fa-solid fa-pump-soap"></i> Aseo Personal</a></li>
+                <li><a href="../index.html#ofertas" class="highlight"><i class="fa-solid fa-fire"></i> Ofertas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Lácteos y Huevos</span>
+        </nav>
+
+        <!-- Category Hero -->
+        <section class="cat-hero">
+            <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=1400&h=400&fit=crop&q=80" alt="Lácteos y Huevos">
+            <div class="cat-hero-overlay"></div>
+            <div class="cat-hero-content">
+                <span><i class="fa-solid fa-cow"></i> Categoría</span>
+                <h1>Lácteos y Huevos</h1>
+                <p>Leche, queso, yogurt, mantequilla, huevos y más frescos del día</p>
+            </div>
+        </section>
+
+        <!-- Toolbar -->
+        <div class="products-toolbar">
+            <p class="products-count">Mostrando <strong>12</strong> productos</p>
+            <div class="filter-group">
+                <span class="filter-label">Ordenar:</span>
+                <select class="sort-select">
+                    <option>Más relevantes</option>
+                    <option>Menor precio</option>
+                    <option>Mayor precio</option>
+                    <option>Novedades</option>
+                </select>
+                <button class="filter-btn active">Todos</button>
+                <button class="filter-btn">Ofertas</button>
+                <button class="filter-btn">Nuevos</button>
+            </div>
+        </div>
+
+        <!-- Productos -->
+        <div class="products-grid">
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=320&h=220&fit=crop&q=80" alt="Leche Evaporada Gloria">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Gloria</span>
+                    <h3 class="product-name">Leche Evaporada Tarro 400g Pack ×6</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 21.50</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge">Oferta</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=320&h=220&fit=crop&q=80" alt="Leche Fresca">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Gloria</span>
+                    <h3 class="product-name">Leche Fresca Entera 1L</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 4.20</span>
+                        <span class="old-price">S/ 4.80</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862?w=320&h=220&fit=crop&q=80" alt="Queso Fresco">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Laive</span>
+                    <h3 class="product-name">Queso Fresco Andino 500g</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 14.90</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge nuevo">Nuevo</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=320&h=220&fit=crop&q=80" alt="Yogurt Fresa">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Gloria</span>
+                    <h3 class="product-name">Yogurt con Fresa 1kg</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 7.80</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=320&h=220&fit=crop&q=80" alt="Mantequilla Gloria">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Gloria</span>
+                    <h3 class="product-name">Mantequilla Con Sal 200g</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 8.50</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge">Oferta</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1518569656558-1f25e69d2491?w=320&h=220&fit=crop&q=80" alt="Huevos blancos">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">San Fernando</span>
+                    <h3 class="product-name">Huevos Blancos ×30 Unidades</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 18.90</span>
+                        <span class="old-price">S/ 21.00</span>
+                        <span class="discount-tag">-10%</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1612182741608-13b6a1025f32?w=320&h=220&fit=crop&q=80" alt="Crema de Leche">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Nestlé</span>
+                    <h3 class="product-name">Crema de Leche 200ml</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 4.90</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1571212515416-fef01fc43637?w=320&h=220&fit=crop&q=80" alt="Yogurt Bebible">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Laive</span>
+                    <h3 class="product-name">Yogurt Bebible Pack ×6 180g</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 10.50</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1453948172161-9d5df94de12f?w=320&h=220&fit=crop&q=80" alt="Queso Edam">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Laive</span>
+                    <h3 class="product-name">Queso Edam en Tajadas 200g</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 11.90</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge">Oferta</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=320&h=220&fit=crop&q=80" alt="Leche en Polvo">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Anchor</span>
+                    <h3 class="product-name">Leche en Polvo Entera 400g</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 18.50</span>
+                        <span class="old-price">S/ 21.00</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=320&h=220&fit=crop&q=80" alt="Margarina">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Sello de Oro</span>
+                    <h3 class="product-name">Margarina Con Sal 500g</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 6.20</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge nuevo">Nuevo</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=320&h=220&fit=crop&q=80" alt="Yogurt griego">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Gloria</span>
+                    <h3 class="product-name">Yogurt Griego Natural 120g</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 3.90</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Paginación -->
+        <nav class="pagination">
+            <button class="page-btn" disabled><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </nav>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3><span class="logo-accent">Peter</span>market</h3>
+                <p>Tu supermercado online. Un e-commerce moderno desarrollado en Laravel y MySQL, listo para brindarte ventas en línea y un control de inventario eficiente.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="abarrotes.html">Abarrotes Básicos</a></li>
+                    <li><a href="lacteos.html">Lácteos y Huevos</a></li>
+                    <li><a href="bebidas.html">Bebidas</a></li>
+                    <li><a href="limpieza.html">Limpieza del Hogar</a></li>
+                    <li><a href="aseo.html">Aseo Personal</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Servicio al Cliente</h3>
+                <ul>
+                    <li><a href="#">Centro de Ayuda</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                    <li><a href="#">Libro de Reclamaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Jr. Espinar con C. Progreso</li>
+                    <li><i class="fa-solid fa-phone"></i> (01) 123-4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> soporte@petermarket.com</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> +51 999 888 777</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Petermarket. Todos los derechos reservados.</p>
+            <div class="payment-icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-nav').classList.toggle('active');
+        });
+        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const c = document.querySelector('.cart-count');
+                c.innerText = parseInt(c.innerText) + 1;
+                c.style.transform = 'scale(1.5)';
+                setTimeout(() => c.style.transform = 'scale(1)', 300);
+            });
+        });
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

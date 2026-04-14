@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas - Petermarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="container-icon" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a href="../index.html"><h1><span>Peter</span>market</h1></a>
+            </div>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="¿Qué estás buscando?">
+                <button type="button">Buscar</button>
+            </div>
+            <nav class="user-nav">
+                <a href="#login" class="nav-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Ingresar</span>
+                </a>
+                <a href="#cart" class="nav-item cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Mi Carrito</span>
+                    <span class="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+        <nav class="category-nav">
+            <ul id="mobile-nav">
+                <li><a href="abarrotes.html"><i class="fa-solid fa-wheat-awn"></i> Abarrotes</a></li>
+                <li><a href="lacteos.html"><i class="fa-solid fa-cow"></i> Lácteos y Huevos</a></li>
+                <li><a href="bebidas.html" class="active-cat"><i class="fa-solid fa-bottle-water"></i> Bebidas</a></li>
+                <li><a href="limpieza.html"><i class="fa-solid fa-broom"></i> Limpieza</a></li>
+                <li><a href="aseo.html"><i class="fa-solid fa-pump-soap"></i> Aseo Personal</a></li>
+                <li><a href="../index.html#ofertas" class="highlight"><i class="fa-solid fa-fire"></i> Ofertas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Bebidas</span>
+        </nav>
+
+        <!-- Category Hero -->
+        <section class="cat-hero">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=1400&h=400&fit=crop&q=80" alt="Bebidas">
+            <div class="cat-hero-overlay"></div>
+            <div class="cat-hero-content">
+                <span><i class="fa-solid fa-bottle-water"></i> Categoría</span>
+                <h1>Bebidas</h1>
+                <p>Agua, gaseosas, jugos, cervezas, energéticas, café y más</p>
+            </div>
+        </section>
+
+        <!-- Toolbar -->
+        <div class="products-toolbar">
+            <p class="products-count">Mostrando <strong>12</strong> productos</p>
+            <div class="filter-group">
+                <span class="filter-label">Ordenar:</span>
+                <select class="sort-select">
+                    <option>Más relevantes</option>
+                    <option>Menor precio</option>
+                    <option>Mayor precio</option>
+                    <option>Novedades</option>
+                </select>
+                <button class="filter-btn active">Todos</button>
+                <button class="filter-btn">Agua</button>
+                <button class="filter-btn">Gaseosas</button>
+                <button class="filter-btn">Jugos</button>
+            </div>
+        </div>
+
+        <!-- Productos -->
+        <div class="products-grid">
+
+            <article class="product-card">
+                <div class="product-badge">Oferta</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=320&h=220&fit=crop&q=80" alt="Agua San Luis">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">San Luis</span>
+                    <h3 class="product-name">Agua Mineral Sin Gas 2.5L</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 2.80</span>
+                        <span class="old-price">S/ 3.20</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?w=320&h=220&fit=crop&q=80" alt="Inca Kola">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Inca Kola</span>
+                    <h3 class="product-name">Inca Kola Botella 2L</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 7.50</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=320&h=220&fit=crop&q=80" alt="Coca Cola">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Coca-Cola</span>
+                    <h3 class="product-name">Coca-Cola Botella 2.25L</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 8.90</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge nuevo">Nuevo</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=320&h=220&fit=crop&q=80" alt="Jugo Del Valle Naranja">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Del Valle</span>
+                    <h3 class="product-name">Jugo Naranja 1L Tetrabrik</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 6.20</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=320&h=220&fit=crop&q=80" alt="Gatorade">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Gatorade</span>
+                    <h3 class="product-name">Gatorade Azul 500ml</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 4.50</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge">Oferta</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=320&h=220&fit=crop&q=80" alt="Cerveza Cristal">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Cristal</span>
+                    <h3 class="product-name">Cerveza Cristal Botella 620ml</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 5.80</span>
+                        <span class="old-price">S/ 6.50</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=320&h=220&fit=crop&q=80" alt="Café Nescafé">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Nescafé</span>
+                    <h3 class="product-name">Café Instante Clásico 200g</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 18.90</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=320&h=220&fit=crop&q=80" alt="Té Herbi">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Herbi</span>
+                    <h3 class="product-name">Té Filtrante Menta 25 Sobres</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 3.20</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=320&h=220&fit=crop&q=80" alt="Chicha Morada">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Watt's</span>
+                    <h3 class="product-name">Chicha Morada 1.5L Botella</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 5.80</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge">Oferta</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=320&h=220&fit=crop&q=80" alt="Volt energética">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Volt</span>
+                    <h3 class="product-name">Bebida Energética Volt 473ml</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 4.20</span>
+                        <span class="old-price">S/ 5.00</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge nuevo">Nuevo</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=320&h=220&fit=crop&q=80" alt="Vino Tacama">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Tacama</span>
+                    <h3 class="product-name">Vino Tinto Gran Takar 750ml</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 28.90</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=320&h=220&fit=crop&q=80" alt="Agua Cielo Pack">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Cielo</span>
+                    <h3 class="product-name">Agua Sin Gas 625ml Pack ×6</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 9.50</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Paginación -->
+        <nav class="pagination">
+            <button class="page-btn" disabled><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </nav>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3><span class="logo-accent">Peter</span>market</h3>
+                <p>Tu supermercado online. Un e-commerce moderno desarrollado en Laravel y MySQL, listo para brindarte ventas en línea y un control de inventario eficiente.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="abarrotes.html">Abarrotes Básicos</a></li>
+                    <li><a href="lacteos.html">Lácteos y Huevos</a></li>
+                    <li><a href="bebidas.html">Bebidas</a></li>
+                    <li><a href="limpieza.html">Limpieza del Hogar</a></li>
+                    <li><a href="aseo.html">Aseo Personal</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Servicio al Cliente</h3>
+                <ul>
+                    <li><a href="#">Centro de Ayuda</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                    <li><a href="#">Libro de Reclamaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Jr. Espinar con C. Progreso</li>
+                    <li><i class="fa-solid fa-phone"></i> (01) 123-4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> soporte@petermarket.com</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> +51 999 888 777</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Petermarket. Todos los derechos reservados.</p>
+            <div class="payment-icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-nav').classList.toggle('active');
+        });
+        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const c = document.querySelector('.cart-count');
+                c.innerText = parseInt(c.innerText) + 1;
+                c.style.transform = 'scale(1.5)';
+                setTimeout(() => c.style.transform = 'scale(1)', 300);
+            });
+        });
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

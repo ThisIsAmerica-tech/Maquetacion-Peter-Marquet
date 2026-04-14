@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abarrotes Básicos - Petermarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="container-icon" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a href="../index.html"><h1><span>Peter</span>market</h1></a>
+            </div>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="¿Qué estás buscando?">
+                <button type="button">Buscar</button>
+            </div>
+            <nav class="user-nav">
+                <a href="#login" class="nav-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Ingresar</span>
+                </a>
+                <a href="#cart" class="nav-item cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Mi Carrito</span>
+                    <span class="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+        <nav class="category-nav">
+            <ul id="mobile-nav">
+                <li><a href="abarrotes.html" class="active-cat"><i class="fa-solid fa-wheat-awn"></i> Abarrotes</a></li>
+                <li><a href="lacteos.html"><i class="fa-solid fa-cow"></i> Lácteos y Huevos</a></li>
+                <li><a href="bebidas.html"><i class="fa-solid fa-bottle-water"></i> Bebidas</a></li>
+                <li><a href="limpieza.html"><i class="fa-solid fa-broom"></i> Limpieza</a></li>
+                <li><a href="aseo.html"><i class="fa-solid fa-pump-soap"></i> Aseo Personal</a></li>
+                <li><a href="../index.html#ofertas" class="highlight"><i class="fa-solid fa-fire"></i> Ofertas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Abarrotes Básicos</span>
+        </nav>
+
+        <!-- Category Hero -->
+        <section class="cat-hero">
+            <img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=1400&h=400&fit=crop&q=80" alt="Abarrotes Básicos">
+            <div class="cat-hero-overlay"></div>
+            <div class="cat-hero-content">
+                <span><i class="fa-solid fa-wheat-awn"></i> Categoría</span>
+                <h1>Abarrotes Básicos</h1>
+                <p>Arroz, azúcar, aceite, fideos, conservas y todo para tu despensa</p>
+            </div>
+        </section>
+
+        <!-- Toolbar -->
+        <div class="products-toolbar">
+            <p class="products-count">Mostrando <strong>12</strong> productos</p>
+            <div class="filter-group">
+                <span class="filter-label">Ordenar:</span>
+                <select class="sort-select">
+                    <option>Más relevantes</option>
+                    <option>Menor precio</option>
+                    <option>Mayor precio</option>
+                    <option>Novedades</option>
+                </select>
+                <button class="filter-btn active">Todos</button>
+                <button class="filter-btn">Ofertas</button>
+                <button class="filter-btn">Nuevos</button>
+            </div>
+        </div>
+
+        <!-- Productos -->
+        <div class="products-grid">
+
+            <article class="product-card">
+                <div class="product-badge">Oferta</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1536304993881-ff86e0c9b1d4?w=320&h=220&fit=crop&q=80" alt="Arroz Extra Caserita">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Caserita</span>
+                    <h3 class="product-name">Arroz Extra 50kg Saco</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 180.00</span>
+                        <span class="old-price">S/ 195.00</span>
+                        <span class="discount-tag">-8%</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge">Oferta</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=320&h=220&fit=crop&q=80" alt="Azúcar Rubia">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Cartavio</span>
+                    <h3 class="product-name">Azúcar Rubia 50kg Saco</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 145.00</span>
+                        <span class="old-price">S/ 160.00</span>
+                        <span class="discount-tag">-9%</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=320&h=220&fit=crop&q=80" alt="Aceite Primor">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Primor</span>
+                    <h3 class="product-name">Aceite Vegetal Botella 1L</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 8.90</span>
+                        <span class="old-price">S/ 10.50</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1551462147-ff29053bfc14?w=320&h=220&fit=crop&q=80" alt="Fideos Lavaggi">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Lavaggi</span>
+                    <h3 class="product-name">Fideos Spaghetti N°5 500g</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 2.80</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=320&h=220&fit=crop&q=80" alt="Harina Blanca Flor">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Blanca Flor</span>
+                    <h3 class="product-name">Harina Sin Preparar 1kg</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 3.50</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge">Oferta</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=320&h=220&fit=crop&q=80" alt="Atún Fanny">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Fanny</span>
+                    <h3 class="product-name">Atún en Trozos Lata 170g</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 5.20</span>
+                        <span class="old-price">S/ 6.00</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1549607938-04b7dab3ccd1?w=320&h=220&fit=crop&q=80" alt="Sal Emsal">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Emsal</span>
+                    <h3 class="product-name">Sal Yodada 1kg</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 1.50</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge nuevo">Nuevo</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=320&h=220&fit=crop&q=80" alt="Lentejas">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">A Granel</span>
+                    <h3 class="product-name">Lentejas Verdes 1kg</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 4.90</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1606914501449-5a96b6ce24ca?w=320&h=220&fit=crop&q=80" alt="Tomate en lata">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Hunt's</span>
+                    <h3 class="product-name">Pasta de Tomate 400g Lata</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 3.80</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge">Oferta</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1559181567-c3190bea1d96?w=320&h=220&fit=crop&q=80" alt="Azúcar blanca">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">San Jacinto</span>
+                    <h3 class="product-name">Azúcar Blanca 25kg Saco</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 75.00</span>
+                        <span class="old-price">S/ 82.00</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=320&h=220&fit=crop&q=80" alt="Aceite Cil">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Cil</span>
+                    <h3 class="product-name">Aceite Vegetal Galón 5L</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 38.50</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge nuevo">Nuevo</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?w=320&h=220&fit=crop&q=80" alt="Alverjas">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Bells</span>
+                    <h3 class="product-name">Alverjas Partidas 500g</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 3.20</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Paginación -->
+        <nav class="pagination">
+            <button class="page-btn" disabled><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </nav>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3><span class="logo-accent">Peter</span>market</h3>
+                <p>Tu supermercado online. Un e-commerce moderno desarrollado en Laravel y MySQL, listo para brindarte ventas en línea y un control de inventario eficiente.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="abarrotes.html">Abarrotes Básicos</a></li>
+                    <li><a href="lacteos.html">Lácteos y Huevos</a></li>
+                    <li><a href="bebidas.html">Bebidas</a></li>
+                    <li><a href="limpieza.html">Limpieza del Hogar</a></li>
+                    <li><a href="aseo.html">Aseo Personal</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Servicio al Cliente</h3>
+                <ul>
+                    <li><a href="#">Centro de Ayuda</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                    <li><a href="#">Libro de Reclamaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Jr. Espinar con C. Progreso</li>
+                    <li><i class="fa-solid fa-phone"></i> (01) 123-4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> soporte@petermarket.com</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> +51 999 888 777</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Petermarket. Todos los derechos reservados.</p>
+            <div class="payment-icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-nav').classList.toggle('active');
+        });
+        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const c = document.querySelector('.cart-count');
+                c.innerText = parseInt(c.innerText) + 1;
+                c.style.transform = 'scale(1.5)';
+                setTimeout(() => c.style.transform = 'scale(1)', 300);
+            });
+        });
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

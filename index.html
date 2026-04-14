@@ -4,88 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petermarket - Tu Abarrote de Confianza</title>
-    <!-- Enlace a FontAwesome para el ícono del menú -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Encabezado Principal / Navegación -->
+
+    <!-- ========== HEADER ========== -->
     <header class="main-header">
         <div class="header-container">
             <div class="container-icon" id="menu-toggle">
-                <!-- Usamos 'fa-solid' porque fa-light requiere licencia PRO -->
-                <i class="bar-icon fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars"></i>
             </div>
-            
             <div class="logo">
-                <h1>Petermarket</h1>
+                <a href="index.html"><h1><span>Peter</span>market</h1></a>
             </div>
             <div class="search-bar">
-                <input type="text" placeholder="¿Qué estás buscando hoy? (Ej. Arroz, Leche, Azúcar)">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="¿Qué estás buscando? (Ej. Arroz, Leche, Azúcar)">
                 <button type="button">Buscar</button>
             </div>
             <nav class="user-nav">
-                <a href="#login" class="nav-item">👤 Ingresar</a>
+                <a href="#login" class="nav-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Ingresar</span>
+                </a>
                 <a href="#cart" class="nav-item cart">
-                    🛒 Mi Carrito <span class="cart-count">0</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Mi Carrito</span>
+                    <span class="cart-count">0</span>
                 </a>
             </nav>
         </div>
         <!-- Menú de Categorías -->
         <nav class="category-nav">
             <ul id="mobile-nav">
-                <li><a href="#abarrotes">Abarrotes</a></li>
-                <li><a href="#lacteos">Lácteos y Huevos</a></li>
-                <li><a href="#bebidas">Bebidas</a></li>
-                <li><a href="#limpieza">Limpieza</a></li>
-                <li><a href="#aseo">Aseo Personal</a></li>
-                <li><a href="#ofertas" class="highlight">🔥 Ofertas</a></li>
+                <li><a href="components/abarrotes.html"><i class="fa-solid fa-wheat-awn"></i> Abarrotes</a></li>
+                <li><a href="components/lacteos.html"><i class="fa-solid fa-cow"></i> Lácteos y Huevos</a></li>
+                <li><a href="components/bebidas.html"><i class="fa-solid fa-bottle-water"></i> Bebidas</a></li>
+                <li><a href="components/limpieza.html"><i class="fa-solid fa-broom"></i> Limpieza</a></li>
+                <li><a href="components/aseo.html"><i class="fa-solid fa-pump-soap"></i> Aseo Personal</a></li>
+                <li><a href="#ofertas" class="highlight"><i class="fa-solid fa-fire"></i> Ofertas</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Sección Hero (Banner principal) -->
+
+        <!-- ========== HERO BANNER ========== -->
         <section class="hero-banner">
             <div class="hero-content">
-                <h2>Los mejores precios<br>todos los días</h2>
-                <p>Descubre nuestras ofertas en productos de primera necesidad.</p>
-                <a href="#productos" class="cta-button">Ver Promociones</a>
+                <span class="hero-tag"><i class="fa-solid fa-laptop-code"></i> Tu Supermercado Digital</span>
+                <h2>Más conectados<br><strong>contigo</strong></h2>
+                <p>Peter Market se moderniza para ti. Realiza tus compras en línea desde cualquier dispositivo con nuestro nuevo sistema de ventas y stock en tiempo real.</p>
+                <div class="hero-buttons">
+                    <a href="#productos" class="cta-button"><i class="fa-solid fa-bolt"></i> Ver Promociones</a>
+                    <a href="#categories" class="cta-secondary">Ver Categorías</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=620&h=420&fit=crop&q=80" alt="Petermarket Tienda Online">
             </div>
         </section>
 
-        <!-- Sección de Categorías Destacadas -->
-        <section class="categories-section">
+        <!-- ========== PROMO BANNERS ========== -->
+        <section class="promo-banners">
+            <a href="components/abarrotes.html" class="promo-card promo-red">
+                <div class="promo-text">
+                    <span>Hasta 30% OFF</span>
+                    <h3>Abarrotes y<br>Despensa</h3>
+                    <p>Ver ofertas <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=260&h=160&fit=crop&q=80" alt="Abarrotes">
+            </a>
+            <a href="#productos" class="promo-card promo-blue">
+                <div class="promo-text">
+                    <span><i class="fa-solid fa-truck-fast"></i> Envío Gratis</span>
+                    <h3>Compras mayores<br>a S/ 150</h3>
+                    <p>Comprar ahora <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=260&h=160&fit=crop&q=80" alt="Envío gratis">
+            </a>
+            <a href="components/bebidas.html" class="promo-card promo-green">
+                <div class="promo-text">
+                    <span>Nuevos productos</span>
+                    <h3>Bebidas &amp;<br>Refrescos</h3>
+                    <p>Explorar <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=260&h=160&fit=crop&q=80" alt="Bebidas">
+            </a>
+        </section>
+
+        <!-- ========== CATEGORÍAS ========== -->
+        <section id="categories" class="categories-section">
             <h2 class="section-title">Compra por Categorías</h2>
             <div class="category-grid">
-                <article class="category-card">
-                    <div class="category-icon">🍚</div>
-                    <h3>Abarrotes Básicos</h3>
-                </article>
-                <article class="category-card">
-                    <div class="category-icon">🥛</div>
-                    <h3>Lácteos</h3>
-                </article>
-                <article class="category-card">
-                    <div class="category-icon">🧃</div>
-                    <h3>Bebidas</h3>
-                </article>
-                <article class="category-card">
-                    <div class="category-icon">🧼</div>
-                    <h3>Limpieza</h3>
-                </article>
+                <a href="components/abarrotes.html" class="category-card">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&h=200&fit=crop&q=80" alt="Abarrotes Básicos">
+                    </div>
+                    <div class="category-label">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                        <h3>Abarrotes Básicos</h3>
+                    </div>
+                </a>
+                <a href="components/lacteos.html" class="category-card">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400&h=200&fit=crop&q=80" alt="Lácteos y Huevos">
+                    </div>
+                    <div class="category-label">
+                        <i class="fa-solid fa-cow"></i>
+                        <h3>Lácteos y Huevos</h3>
+                    </div>
+                </a>
+                <a href="components/bebidas.html" class="category-card">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=200&fit=crop&q=80" alt="Bebidas">
+                    </div>
+                    <div class="category-label">
+                        <i class="fa-solid fa-bottle-water"></i>
+                        <h3>Bebidas</h3>
+                    </div>
+                </a>
+                <a href="components/limpieza.html" class="category-card">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1585184394271-4c0a47dc59c9?w=400&h=200&fit=crop&q=80" alt="Limpieza del Hogar">
+                    </div>
+                    <div class="category-label">
+                        <i class="fa-solid fa-broom"></i>
+                        <h3>Limpieza del Hogar</h3>
+                    </div>
+                </a>
+                <a href="components/aseo.html" class="category-card">
+                    <div class="category-img">
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=200&fit=crop&q=80" alt="Aseo Personal">
+                    </div>
+                    <div class="category-label">
+                        <i class="fa-solid fa-pump-soap"></i>
+                        <h3>Aseo Personal</h3>
+                    </div>
+                </a>
             </div>
         </section>
 
-        <!-- Sección de Productos -->
+        <!-- ========== PRODUCTOS DESTACADOS ========== -->
         <section id="productos" class="products-section">
-            <h2 class="section-title">Productos Destacados</h2>
+            <div class="section-header">
+                <h2 class="section-title">Productos Destacados</h2>
+                <a href="#" class="see-all">Ver todos <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
             <div class="products-grid">
-                <!-- Producto 1 -->
+
                 <article class="product-card">
+                    <div class="product-badge">Oferta</div>
                     <div class="product-image">
-                        <!-- Placeholder visual -->
-                        <div class="img-placeholder" style="background-color: #ffd166;">🍚</div>
+                        <img src="https://images.unsplash.com/photo-1536304993881-ff86e0c9b1d4?w=320&h=220&fit=crop&q=80" alt="Arroz Extra">
                     </div>
                     <div class="product-info">
                         <span class="product-brand">Caserita</span>
@@ -94,29 +166,28 @@
                             <span class="current-price">S/ 180.00</span>
                             <span class="old-price">S/ 195.00</span>
                         </div>
-                        <button class="add-to-cart-btn">Agregar al carrito</button>
-                    </div>
-                </article>
-                
-                <!-- Producto 2 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <div class="img-placeholder" style="background-color: #118ab2;">🥛</div>
-                    </div>
-                    <div class="product-info">
-                        <span class="product-brand">Gloria</span>
-                        <h3 class="product-name">Leche Evaporada Tarro 400g (Pack x6)</h3>
-                        <div class="product-price">
-                            <span class="current-price">S/ 21.50</span>
-                        </div>
-                        <button class="add-to-cart-btn">Agregar al carrito</button>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
                     </div>
                 </article>
 
-                <!-- Producto 3 -->
                 <article class="product-card">
                     <div class="product-image">
-                        <div class="img-placeholder" style="background-color: #06d6a0;">🧴</div>
+                        <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=320&h=220&fit=crop&q=80" alt="Leche Evaporada Gloria">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Gloria</span>
+                        <h3 class="product-name">Leche Evaporada Tarro 400g Pack ×6</h3>
+                        <div class="product-price">
+                            <span class="current-price">S/ 21.50</span>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-badge">Oferta</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=320&h=220&fit=crop&q=80" alt="Aceite Vegetal Primor">
                     </div>
                     <div class="product-info">
                         <span class="product-brand">Primor</span>
@@ -125,14 +196,13 @@
                             <span class="current-price">S/ 8.90</span>
                             <span class="old-price">S/ 10.50</span>
                         </div>
-                        <button class="add-to-cart-btn">Agregar al carrito</button>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
                     </div>
                 </article>
 
-                <!-- Producto 4 -->
                 <article class="product-card">
                     <div class="product-image">
-                        <div class="img-placeholder" style="background-color: #ef476f;">🥫</div>
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=320&h=220&fit=crop&q=80" alt="Atún Fanny">
                     </div>
                     <div class="product-info">
                         <span class="product-brand">Fanny</span>
@@ -140,44 +210,130 @@
                         <div class="product-price">
                             <span class="current-price">S/ 5.20</span>
                         </div>
-                        <button class="add-to-cart-btn">Agregar al carrito</button>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
                     </div>
                 </article>
+
+                <article class="product-card">
+                    <div class="product-badge nuevo">Nuevo</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=320&h=220&fit=crop&q=80" alt="Yogurt Gloria">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Gloria</span>
+                        <h3 class="product-name">Yogurt Natural con Fresas 1kg</h3>
+                        <div class="product-price">
+                            <span class="current-price">S/ 7.80</span>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-badge">Oferta</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=320&h=220&fit=crop&q=80" alt="Azúcar Cartavio">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Cartavio</span>
+                        <h3 class="product-name">Azúcar Rubia 50kg - Saco</h3>
+                        <div class="product-price">
+                            <span class="current-price">S/ 145.00</span>
+                            <span class="old-price">S/ 160.00</span>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=320&h=220&fit=crop&q=80" alt="Detergente Ariel">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Ariel</span>
+                        <h3 class="product-name">Detergente en Polvo 4kg</h3>
+                        <div class="product-price">
+                            <span class="current-price">S/ 32.00</span>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-badge">Oferta</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1585751119414-ef2636f8aede?w=320&h=220&fit=crop&q=80" alt="Shampoo Pantene">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Pantene</span>
+                        <h3 class="product-name">Shampoo Pantene Pro-V 400ml</h3>
+                        <div class="product-price">
+                            <span class="current-price">S/ 12.90</span>
+                            <span class="old-price">S/ 15.50</span>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </article>
+
             </div>
         </section>
 
-        <!-- Beneficios -->
+        <!-- ========== BENEFICIOS ========== -->
         <section class="benefits-section">
             <div class="benefit">
-                <span class="icon">🚚</span>
+                <div class="benefit-icon"><i class="fa-solid fa-laptop-house"></i></div>
                 <div>
-                    <h4>Envío Rápido</h4>
-                    <p>Llega a tu casa hoy mismo</p>
+                    <h4>Ventas en Línea</h4>
+                    <p>Compra desde cualquier dispositivo</p>
                 </div>
             </div>
             <div class="benefit">
-                <span class="icon">💳</span>
+                <div class="benefit-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
                 <div>
-                    <h4>Pago Seguro</h4>
-                    <p>Aceptamos todas las tarjetas, Yape y Plin</p>
+                    <h4>Gestión de Inventario</h4>
+                    <p>Stock actualizado en tiempo real</p>
                 </div>
             </div>
             <div class="benefit">
-                <span class="icon">💯</span>
+                <div class="benefit-icon"><i class="fa-solid fa-shield-halved"></i></div>
                 <div>
-                    <h4>Garantía de Calidad</h4>
-                    <p>Productos frescos y revisados</p>
+                    <h4>Pagos Electrónicos</h4>
+                    <p>Procesamiento seguro y rápido</p>
+                </div>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div>
+                    <h4>Eficiencia Operativa</h4>
+                    <p>Reportes y control automatizado</p>
                 </div>
             </div>
         </section>
+
     </main>
 
-    <!-- Pie de página -->
+    <!-- ========== FOOTER ========== -->
     <footer class="main-footer">
         <div class="footer-grid">
             <div class="footer-col">
-                <h3>Petermarket</h3>
-                <p>Tu supermercado online de confianza. Los mejores precios en abarrotes para tu hogar o negocio.</p>
+                <h3><span class="logo-accent">Peter</span>market</h3>
+                <p>Tu supermercado online. Un e-commerce moderno desarrollado en Laravel y MySQL, listo para brindarte ventas en línea y un control de inventario eficiente.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="components/abarrotes.html">Abarrotes Básicos</a></li>
+                    <li><a href="components/lacteos.html">Lácteos y Huevos</a></li>
+                    <li><a href="components/bebidas.html">Bebidas</a></li>
+                    <li><a href="components/limpieza.html">Limpieza del Hogar</a></li>
+                    <li><a href="components/aseo.html">Aseo Personal</a></li>
+                </ul>
             </div>
             <div class="footer-col">
                 <h3>Servicio al Cliente</h3>
@@ -191,28 +347,39 @@
             <div class="footer-col">
                 <h3>Contacto</h3>
                 <ul>
-                    <li>📍 Av. Principal 123, Lima, Perú</li>
-                    <li>📞 (01) 123-4567</li>
-                    <li>✉️ soporte@petermarket.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Jr. Espinar con C. Progreso</li>
+                    <li><i class="fa-solid fa-phone"></i> (01) 123-4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> soporte@petermarket.com</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> +51 999 888 777</li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Petermarket. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Petermarket. Todos los derechos reservados.</p>
+            <div class="payment-icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+            </div>
         </div>
     </footer>
 
     <script>
-        // Lógica del carrito
-        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const countSpan = document.querySelector('.cart-count');
-                countSpan.innerText = parseInt(countSpan.innerText) + 1;
-                countSpan.style.transform = 'scale(1.2)';
-                setTimeout(() => countSpan.style.transform = 'scale(1)', 200);
-            });
+        // Menú mobile
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-nav').classList.toggle('active');
         });
 
+        // Carrito
+        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const countSpan = document.querySelector('.cart-count');
+                countSpan.innerText = parseInt(countSpan.innerText) + 1;
+                countSpan.style.transform = 'scale(1.5)';
+                setTimeout(() => countSpan.style.transform = 'scale(1)', 300);
+            });
+        });
     </script>
+
 </body>
 </html>

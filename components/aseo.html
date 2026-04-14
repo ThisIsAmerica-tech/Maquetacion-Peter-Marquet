@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aseo Personal - Petermarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="container-icon" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a href="../index.html"><h1><span>Peter</span>market</h1></a>
+            </div>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="¿Qué estás buscando?">
+                <button type="button">Buscar</button>
+            </div>
+            <nav class="user-nav">
+                <a href="#login" class="nav-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Ingresar</span>
+                </a>
+                <a href="#cart" class="nav-item cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Mi Carrito</span>
+                    <span class="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+        <nav class="category-nav">
+            <ul id="mobile-nav">
+                <li><a href="abarrotes.html"><i class="fa-solid fa-wheat-awn"></i> Abarrotes</a></li>
+                <li><a href="lacteos.html"><i class="fa-solid fa-cow"></i> Lácteos y Huevos</a></li>
+                <li><a href="bebidas.html"><i class="fa-solid fa-bottle-water"></i> Bebidas</a></li>
+                <li><a href="limpieza.html"><i class="fa-solid fa-broom"></i> Limpieza</a></li>
+                <li><a href="aseo.html" class="active-cat"><i class="fa-solid fa-pump-soap"></i> Aseo Personal</a></li>
+                <li><a href="../index.html#ofertas" class="highlight"><i class="fa-solid fa-fire"></i> Ofertas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Aseo Personal</span>
+        </nav>
+
+        <!-- Category Hero -->
+        <section class="cat-hero">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1400&h=400&fit=crop&q=80" alt="Aseo Personal">
+            <div class="cat-hero-overlay"></div>
+            <div class="cat-hero-content">
+                <span><i class="fa-solid fa-pump-soap"></i> Categoría</span>
+                <h1>Aseo Personal</h1>
+                <p>Shampoo, jabón, pasta dental, desodorantes, papel higiénico y más</p>
+            </div>
+        </section>
+
+        <!-- Toolbar -->
+        <div class="products-toolbar">
+            <p class="products-count">Mostrando <strong>12</strong> productos</p>
+            <div class="filter-group">
+                <span class="filter-label">Ordenar:</span>
+                <select class="sort-select">
+                    <option>Más relevantes</option>
+                    <option>Menor precio</option>
+                    <option>Mayor precio</option>
+                    <option>Novedades</option>
+                </select>
+                <button class="filter-btn active">Todos</button>
+                <button class="filter-btn">Ofertas</button>
+                <button class="filter-btn">Nuevos</button>
+            </div>
+        </div>
+
+        <!-- Productos -->
+        <div class="products-grid">
+
+            <article class="product-card">
+                <div class="product-badge">Oferta</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1585751119414-ef2636f8aede?w=320&h=220&fit=crop&q=80" alt="Shampoo Pantene">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Pantene</span>
+                    <h3 class="product-name">Shampoo Pro-V Hidratación 400ml</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 12.90</span>
+                        <span class="old-price">S/ 15.50</span>
+                        <span class="discount-tag">-17%</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=320&h=220&fit=crop&q=80" alt="Jabón Lux">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Lux</span>
+                    <h3 class="product-name">Jabón de Tocador Pack ×3 — 90g c/u</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 6.50</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1559757175-7cb057fba93c?w=320&h=220&fit=crop&q=80" alt="Pasta Dental Colgate">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Colgate</span>
+                    <h3 class="product-name">Pasta Dental Triple Acción 150g</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 7.80</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge">Oferta</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1599305090598-fe179d501227?w=320&h=220&fit=crop&q=80" alt="Desodorante Rexona">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Rexona</span>
+                    <h3 class="product-name">Desodorante Aerosol Efficient 150ml</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 10.50</span>
+                        <span class="old-price">S/ 12.90</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1583474695651-f46b6efb86e4?w=320&h=220&fit=crop&q=80" alt="Papel Higiénico Elite">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Elite</span>
+                    <h3 class="product-name">Papel Higiénico Doble Hoja ×4</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 9.90</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge nuevo">Nuevo</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=320&h=220&fit=crop&q=80" alt="Crema Lubriderm">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Lubriderm</span>
+                    <h3 class="product-name">Crema Corporal Humectante 400ml</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 19.90</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1559757175-7cb057fba93c?w=320&h=220&fit=crop&q=80" alt="Cepillo Dental Oral-B">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Oral-B</span>
+                    <h3 class="product-name">Cepillo Dental Suave ×2 Unidades</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 8.90</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge">Oferta</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1585751119414-ef2636f8aede?w=320&h=220&fit=crop&q=80" alt="Acondicionador Head Shoulders">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Head &amp; Shoulders</span>
+                    <h3 class="product-name">Shampoo + Acondicionador 2en1 400ml</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 14.50</span>
+                        <span class="old-price">S/ 17.00</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1583474695651-f46b6efb86e4?w=320&h=220&fit=crop&q=80" alt="Toallitas Húmedas">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">WetWipes</span>
+                    <h3 class="product-name">Toallitas Húmedas Familiar ×80</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 7.50</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=320&h=220&fit=crop&q=80" alt="Algodón">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Johnson's</span>
+                    <h3 class="product-name">Algodón Puro 100g</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 4.20</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge nuevo">Nuevo</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=320&h=220&fit=crop&q=80" alt="Bloqueador Solar">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Eucerin</span>
+                    <h3 class="product-name">Bloqueador Solar FPS 50+ 200ml</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 32.90</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge">Oferta</div>
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1585751119414-ef2636f8aede?w=320&h=220&fit=crop&q=80" alt="Body Splash">
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Axe</span>
+                    <h3 class="product-name">Body Splash Fragancia Fresh 250ml</h3>
+                    <div class="product-price">
+                        <span class="current-price">S/ 11.90</span>
+                        <span class="old-price">S/ 14.50</span>
+                    </div>
+                    <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Paginación -->
+        <nav class="pagination">
+            <button class="page-btn" disabled><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </nav>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3><span class="logo-accent">Peter</span>market</h3>
+                <p>Tu supermercado online. Un e-commerce moderno desarrollado en Laravel y MySQL, listo para brindarte ventas en línea y un control de inventario eficiente.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="abarrotes.html">Abarrotes Básicos</a></li>
+                    <li><a href="lacteos.html">Lácteos y Huevos</a></li>
+                    <li><a href="bebidas.html">Bebidas</a></li>
+                    <li><a href="limpieza.html">Limpieza del Hogar</a></li>
+                    <li><a href="aseo.html">Aseo Personal</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Servicio al Cliente</h3>
+                <ul>
+                    <li><a href="#">Centro de Ayuda</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                    <li><a href="#">Libro de Reclamaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Jr. Espinar con C. Progreso</li>
+                    <li><i class="fa-solid fa-phone"></i> (01) 123-4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> soporte@petermarket.com</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> +51 999 888 777</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Petermarket. Todos los derechos reservados.</p>
+            <div class="payment-icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-nav').classList.toggle('active');
+        });
+        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const c = document.querySelector('.cart-count');
+                c.innerText = parseInt(c.innerText) + 1;
+                c.style.transform = 'scale(1.5)';
+                setTimeout(() => c.style.transform = 'scale(1)', 300);
+            });
+        });
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
