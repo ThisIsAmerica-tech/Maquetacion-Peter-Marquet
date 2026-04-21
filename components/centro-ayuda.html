@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Ayuda - Petermarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="container-icon" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a href="../index.html"><h1><span>Peter</span>market</h1></a>
+            </div>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="¿Qué estás buscando?">
+                <button type="button">Buscar</button>
+            </div>
+            <nav class="user-nav">
+                <a href="#login" class="nav-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Ingresar</span>
+                </a>
+                <a href="#cart" class="nav-item cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Mi Carrito</span>
+                    <span class="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+        <nav class="category-nav">
+            <ul id="mobile-nav">
+                <li><a href="abarrotes.html"><i class="fa-solid fa-wheat-awn"></i> Abarrotes</a></li>
+                <li><a href="lacteos.html"><i class="fa-solid fa-cow"></i> Lácteos y Huevos</a></li>
+                <li><a href="bebidas.html"><i class="fa-solid fa-bottle-water"></i> Bebidas</a></li>
+                <li><a href="limpieza.html"><i class="fa-solid fa-broom"></i> Limpieza</a></li>
+                <li><a href="aseo.html"><i class="fa-solid fa-pump-soap"></i> Aseo Personal</a></li>
+                <li><a href="../index.html#ofertas" class="highlight"><i class="fa-solid fa-fire"></i> Ofertas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <nav class="breadcrumb">
+            <a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Servicio al Cliente</span>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Centro de Ayuda</span>
+        </nav>
+
+        <section class="help-header">
+            <i class="fa-solid fa-headset help-icon"></i>
+            <h1>¿En qué podemos ayudarte?</h1>
+            <p>Encuentra respuestas rápidas a tus dudas sobre compras, envíos y más.</p>
+        </section>
+
+        <section class="faq-container">
+            
+            <h2 class="faq-section-title"><i class="fa-solid fa-bag-shopping"></i> Compras y Pedidos</h2>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Cómo realizo mi primera compra en la web? <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Navega por nuestras categorías, elige tus productos y haz clic en "Agregar". Una vez tengas todo lo que necesitas, ve a "Mi Carrito", revisa tu pedido y dale a procesar. El sistema te guiará para ingresar tus datos de entrega.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Existe un monto mínimo para pedir? <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>No tenemos un monto mínimo de compra. Sin embargo, para acceder al beneficio de "Envío Gratis", tu pedido debe superar los S/ 150.00.</p>
+                </div>
+            </div>
+
+            <h2 class="faq-section-title"><i class="fa-solid fa-motorcycle"></i> Envíos y Entregas</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Cuáles son sus zonas de cobertura? <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Actualmente, nuestros repartidores cubren todo el distrito de Urcos y zonas aledañas. Al momento de ingresar tu dirección en el checkout, el sistema te confirmará si llegamos a tu ubicación.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Cuánto tiempo tarda en llegar mi pedido? <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Los pedidos realizados antes de las 4:00 PM se despachan y entregan el mismo día. Si tu pedido ingresa después de esa hora, lo programaremos como prioridad para la mañana del día siguiente.</p>
+                </div>
+            </div>
+
+            <h2 class="faq-section-title"><i class="fa-solid fa-credit-card"></i> Pagos</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    ¿Qué métodos de pago aceptan? <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Puedes pagar de forma 100% segura usando tus tarjetas de crédito o débito a través de la web. También aceptamos pagos mediante Yape, Plin o pago en efectivo contra entrega al momento de recibir tus abarrotes.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3><span class="logo-accent">Peter</span>market</h3>
+                <p>Tu supermercado online. Un e-commerce moderno desarrollado en Laravel y MySQL, listo para brindarte ventas en línea y un control de inventario eficiente.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="abarrotes.html">Abarrotes Básicos</a></li>
+                    <li><a href="lacteos.html">Lácteos y Huevos</a></li>
+                    <li><a href="bebidas.html">Bebidas</a></li>
+                    <li><a href="limpieza.html">Limpieza del Hogar</a></li>
+                    <li><a href="aseo.html">Aseo Personal</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Servicio al Cliente</h3>
+                <ul>
+                    <li><a href="centro-ayuda.html">Centro de Ayuda</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Políticas de Privacidad</a></li>
+                    <li><a href="#">Libro de Reclamaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Jr. Espinar con C. Progreso</li>
+                    <li><i class="fa-solid fa-phone"></i> (01) 123-4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> soporte@petermarket.com</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> +51 999 888 777</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Petermarket. Todos los derechos reservados.</p>
+            <div class="payment-icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menú responsive y Carrito
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-nav').classList.toggle('active');
+        });
+
+        // Lógica del Acordeón para FAQ
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+
+                // Opcional: Cerrar las demás respuestas
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                // Si no estaba activa, la abrimos
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

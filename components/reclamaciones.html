@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro de Reclamaciones - Petermarket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="container-icon" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <a href="../index.html"><h1><span>Peter</span>market</h1></a>
+            </div>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="¿Qué estás buscando?">
+                <button type="button">Buscar</button>
+            </div>
+            <nav class="user-nav">
+                <a href="#login" class="nav-item">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Ingresar</span>
+                </a>
+                <a href="#cart" class="nav-item cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Mi Carrito</span>
+                    <span class="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+        <nav class="category-nav">
+            <ul id="mobile-nav">
+                <li><a href="abarrotes.html"><i class="fa-solid fa-wheat-awn"></i> Abarrotes</a></li>
+                <li><a href="lacteos.html"><i class="fa-solid fa-cow"></i> Lácteos y Huevos</a></li>
+                <li><a href="bebidas.html"><i class="fa-solid fa-bottle-water"></i> Bebidas</a></li>
+                <li><a href="limpieza.html"><i class="fa-solid fa-broom"></i> Limpieza</a></li>
+                <li><a href="aseo.html"><i class="fa-solid fa-pump-soap"></i> Aseo Personal</a></li>
+                <li><a href="../index.html#ofertas" class="highlight"><i class="fa-solid fa-fire"></i> Ofertas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <nav class="breadcrumb">
+            <a href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Servicio al Cliente</span>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Libro de Reclamaciones</span>
+        </nav>
+
+        <section class="claims-container">
+            
+            <div class="claims-info">
+                <img src="https://images.unsplash.com/photo-1556742560-60a059d9f96b?w=700&h=600&fit=crop&q=80" alt="Atención al Cliente Petermarket" class="claims-image">
+                <div class="claims-text-block">
+                    <h2><i class="fa-solid fa-book-open"></i> Libro de Reclamaciones Virtual</h2>
+                    <p>En Petermarket, tu satisfacción es nuestra prioridad. Si has tenido algún inconveniente con tu pedido o nuestro servicio, por favor utiliza este formulario para hacérnoslo saber.</p>
+                    <p>Atenderemos tu queja o reclamo con la mayor rapidez posible para brindarte una solución satisfactoria.</p>
+                </div>
+            </div>
+
+            <div class="claims-form-wrapper">
+                <form action="#" method="POST" class="claims-form">
+                    
+                    <h3>1. Identificación del Consumidor</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombres">Nombres y Apellidos *</label>
+                            <input type="text" id="nombres" name="nombres" required placeholder="Ej. Juan Pérez">
+                        </div>
+                        <div class="form-group">
+                            <label for="dni">DNI / CE *</label>
+                            <input type="text" id="dni" name="dni" required placeholder="Número de documento">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="direccion">Dirección completa *</label>
+                        <input type="text" id="direccion" name="direccion" required placeholder="Ej. Jr. Espinar 123, Urcos">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="correo">Correo Electrónico *</label>
+                            <input type="email" id="correo" name="correo" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono / Celular *</label>
+                            <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 999888777">
+                        </div>
+                    </div>
+
+                    <h3>2. Detalle del Reclamo o Queja</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tipo">Tipo *</label>
+                            <select id="tipo" name="tipo" required>
+                                <option value="">Seleccione...</option>
+                                <option value="reclamo">Reclamo (Disconformidad con el producto)</option>
+                                <option value="queja">Queja (Disconformidad con el servicio)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pedido">N° Pedido / Boleta (Opcional)</label>
+                            <input type="text" id="pedido" name="pedido" placeholder="Ej. PED-1045">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="detalle">Detalle del inconveniente *</label>
+                        <textarea id="detalle" name="detalle" required placeholder="Describe lo ocurrido..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pedido_cliente">Pedido / Solución solicitada *</label>
+                        <textarea id="pedido_cliente" name="pedido_cliente" required placeholder="¿Qué solución esperas?"></textarea>
+                    </div>
+
+                    <div class="form-group form-checkbox">
+                        <input type="checkbox" id="datos" name="datos" required>
+                        <label for="datos">Acepto el uso de mis datos para la gestión de este reclamo (conforme a la Política de Privacidad). *</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit-claims">Enviar Reclamación <i class="fa-solid fa-paper-plane"></i></button>
+                    
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3><span class="logo-accent">Peter</span>market</h3>
+                <p>Tu supermercado online. Un e-commerce moderno desarrollado en Laravel y MySQL, listo para brindarte ventas en línea y un control de inventario eficiente.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="abarrotes.html">Abarrotes Básicos</a></li>
+                    <li><a href="lacteos.html">Lácteos y Huevos</a></li>
+                    <li><a href="bebidas.html">Bebidas</a></li>
+                    <li><a href="limpieza.html">Limpieza del Hogar</a></li>
+                    <li><a href="aseo.html">Aseo Personal</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Servicio al Cliente</h3>
+                <ul>
+                    <li><a href="centro-ayuda.html">Centro de Ayuda</a></li>
+                    <li><a href="terminos.html">Términos y Condiciones</a></li>
+                    <li><a href="privacidad.html">Políticas de Privacidad</a></li>
+                    <li><a href="reclamaciones.html">Libro de Reclamaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Jr. Espinar con C. Progreso</li>
+                    <li><i class="fa-solid fa-phone"></i> (01) 123-4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> soporte@petermarket.com</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> +51 999 888 777</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Petermarket. Todos los derechos reservados.</p>
+            <div class="payment-icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menú responsive y Carrito
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('mobile-nav').classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
