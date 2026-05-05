@@ -24,7 +24,7 @@
                 <button type="button">Buscar</button>
             </div>
             <nav class="user-nav">
-                <a href="#login" class="nav-item">
+                <a href="components/login.html" id="zona-usuario">
                     <i class="fa-regular fa-user"></i>
                     <span>Ingresar</span>
                 </a>
@@ -365,20 +365,49 @@
     </footer>
 
     <script>
-        // Menú mobile
+        // ==========================================
+        // 1. FUNCIONALIDAD DEL MENÚ MOBILE
+        // ==========================================
         document.getElementById('menu-toggle').addEventListener('click', function () {
             document.getElementById('mobile-nav').classList.toggle('active');
         });
 
-        // Carrito
+        // ==========================================
+        // 2. FUNCIONALIDAD DEL CARRITO DE COMPRAS
+        // ==========================================
         document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
             btn.addEventListener('click', function () {
                 const countSpan = document.querySelector('.cart-count');
                 countSpan.innerText = parseInt(countSpan.innerText) + 1;
+                
+                // Animación de latido al agregar
                 countSpan.style.transform = 'scale(1.5)';
                 setTimeout(() => countSpan.style.transform = 'scale(1)', 300);
             });
         });
+
+        // ==========================================
+        // 3. MOSTRAR USUARIO LOGUEADO (NUEVO)
+        // ==========================================
+        // Revisamos si hay un usuario guardado en la memoria
+        let usuarioGuardado = localStorage.getItem('usuarioPetermarket');
+    
+    if (usuarioGuardado) {
+        let zonaUsuario = document.getElementById('zona-usuario');
+        if (zonaUsuario) {
+            // AQUÍ APARECERÁ EL NOMBRE QUE ESCRIBIÓ (Ej: "Juan Pérez")
+            zonaUsuario.innerHTML = `
+                <i class="fa-solid fa-user-check"></i> Hola, ${usuarioGuardado} 
+                <span id="btn-salir" style="font-size: 12px; color: #e63946; margin-left: 10px; cursor: pointer; text-decoration: underline;">(Salir)</span>
+            `;
+            zonaUsuario.removeAttribute('href');
+            
+            document.getElementById('btn-salir').addEventListener('click', function() {
+                localStorage.removeItem('usuarioPetermarket');
+                window.location.reload();
+            });
+        }
+    }
     </script>
 
 </body>
